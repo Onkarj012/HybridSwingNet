@@ -1,0 +1,55 @@
+run:
+  name: v3_nifty100
+  out_dir: runs
+  seed: 42
+
+splits:
+  split_mode: cross_sectional
+  train_end: "2023-06-30"
+  val_end: "2024-03-31"
+  test_end: "2024-12-31"
+  val_stocks: 50
+  test_stocks: 50
+  blind_holdout_stocks: 50
+  embargo_days: 10
+
+features:
+  horizons: [1, 3, 5, 7, 10]
+
+model:
+  type: stockxpert_v3
+  use_stock_traits: true
+  use_macro_features: true
+  stock_traits_dim: 7
+  hidden_dim: 96
+  stock_embed_dim: 16
+
+loss_weights:
+  legacy_loss_mode: false
+  direction: 1.0
+  magnitude: 0.4
+  regime: 0.0
+
+train:
+  use_amp: true
+  epochs: 50
+  batch_size: 256
+  lr: 0.0003
+  weight_decay: 0.001
+  early_stopping_patience: 10
+
+calibration:
+  method: isotonic
+  calibrate_on_val: true
+
+backtest:
+  sector_cap_pct: 0.30
+  drawdown_pause_pct: 0.15
+  max_adv_pct: 0.05
+
+live:
+  paper_trading_threshold: 0.60
+  accuracy_floor: 0.52
+  psi_threshold: 0.20
+  ece_drift_threshold: 0.05
+

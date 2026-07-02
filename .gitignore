@@ -1,0 +1,38 @@
+# --- data, runs, weights: never commit (use loader scripts + GitHub Release) ---
+runs/
+run/
+data/
+cache/
+graphify-out/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# --- large / generated artifacts ---
+*.pdf
+*.docx
+*.csv
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.python-version.local
+
+# --- tooling caches ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# --- os / editor ---
+.DS_Store
+.idea/
+.vscode/
+
+# --- secrets ---
+.env

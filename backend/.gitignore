@@ -1,0 +1,4 @@
+# Model weights and fitted artifacts — download or copy from runs/ locally
+artifacts/**/*.pt
+artifacts/**/*.pkl
+.DS_Store

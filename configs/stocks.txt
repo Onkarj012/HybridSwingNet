@@ -1,0 +1,33 @@
+  symbols:
+    # PSU Banks (Under ₹300, Low Risk, High Volume)
+    - CANBK.NS # ₹147 - Canara Bank
+    - BANKINDIA.NS # ₹163 - Bank of India
+    - UNIONBANK.NS # ₹178 - Union Bank
+    - BANKBARODA.NS # ₹289 - Bank of Baroda
+    - IDFCFIRSTB.NS # ₹85 - IDFC First Bank
+    - FEDERALBNK.NS # ₹286 - Federal Bank
+    - CUB.NS # ₹292 - City Union Bank
+
+    # PSU & Infrastructure (Government Backed, Low Risk)
+    - NHPC.NS # ₹79 - Hydro Power
+    - NMDC.NS # ₹84 - Iron Ore Mining
+    - SAIL.NS # ₹160 - Steel Authority
+    - BHEL.NS # ₹266 - Heavy Electricals
+    - ONGC.NS # ₹268 - Oil & Natural Gas
+    - POWERGRID.NS # ₹292 - Power Transmission
+    - PETRONET.NS # ₹295 - LNG
+
+    # Large Cap Industrial & Consumer
+    - TATASTEEL.NS # ₹197 - Tata Steel
+    - IGL.NS # ₹175 - Gas Distribution
+    - WIPRO.NS # ₹230 - IT Services
+    - ASHOKLEY.NS # ₹201 - Commercial Vehicles
+    - CASTROLIND.NS # ₹185 - Lubricants
+    - CROMPTON.NS # ₹245 - Consumer Electricals
+
+    # Mid Cap (Quality, Under ₹300)
+    - ZEEL.NS # ₹89 - Media
+    - CESC.NS # ₹153 - Power
+    - LTF.NS # ₹285 - L&T Finance
+    - ABFRL.NS # ₹68 - Fashion Retail
+    - ALEMBICLTD.NS # ₹97 - Pharma
